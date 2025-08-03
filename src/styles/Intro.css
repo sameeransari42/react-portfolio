@@ -1,0 +1,91 @@
+#intro {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-image {
+    position: absolute;
+    top: -5rem;
+    right: 0rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.hello {
+    color: #c6c6c6;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introText {
+    margin: 0.750rem 0;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 1.25rem;
+    color: #c6c6c6;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnImg {
+    height: 1rem;
+    margin: 0 0.25rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width:840px) {
+    .profile-image {
+        right: -10vw;
+    }
+
+    .introContent {
+        font-size: 10vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+
+    .introPara {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .profile-image {
+        right: -20vw;
+    }
+}

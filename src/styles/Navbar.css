@@ -1,0 +1,116 @@
+#top {
+    width: 100vw;
+    max-width: 75rem;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    background: rgb(30, 30, 30);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navbarLogo {
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.navbarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1re;
+}
+
+.navbarLink {
+    margin: 0 1.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    font-size: 1.05rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.navbarLink:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+.navbarContactBtn {
+    font-size: 0.80rem;
+    padding: 1rem 1.5rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    border-radius: 2rem;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbarContactBtn img {
+    height: 0.75rem;
+    margin-right: 8px;
+}
+
+.sideMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+    font-family: sans-serif;
+    border-bottom: 0.15rem solid yellow;
+}
+
+.sideMenuItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.6s ease, color 0.6s ease;
+}
+
+.sideMenuItem:hover {
+    color: yellow;
+    border-radius: 0.4rem;
+    border-bottom: 2px solid yellow;
+}
+
+.sideMenuImg {
+    display: none;
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:670px) {
+    .sideMenuImg {
+        display: block;
+    }
+
+    .navbarMenu {
+        display: none;
+    }
+
+    .navbarContactBtn {
+        display: none;
+    }
+}

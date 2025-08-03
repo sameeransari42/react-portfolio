@@ -1,0 +1,42 @@
+#clients {
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clientTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+.clientDesc {
+    max-width: 50rem;
+    font-size: 1.0rem;
+    font-weight: 400;
+    padding: 1.75rem 1.5rem 3rem;
+    color: rgb(227, 227, 227);
+}
+
+.clientImg {
+    height: 4.75rem;
+    margin: 0 1rem 0;
+}
+
+@media screen and (max-width:810px) {
+    .clientImgs {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .clientImg {
+        margin: 0.5rem;
+    }
+}
